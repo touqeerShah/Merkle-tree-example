@@ -46,6 +46,8 @@
     "@openzeppelin/contracts": "^4.7.3",
     "cross-env": "^7.0.3",
     "hardhat-deploy": "^0.11.23",
+    "keccak256": "^1.0.6",
+    "merkletreejs": "^0.3.10",
     "prettier-plugin-solidity": "^1.0.0-beta.24",
     "web3": "^1.8.2"
   }

@@ -1,10 +1,11 @@
-# DAO-Example
+# Merkle-tree-example
 
-It is simple example for DOA 
+
+This is small example to check how we can add transactions into Merkle Tree and verify them.
 
 ### Usercase
 
-This is simple example of Governance based on both ERO20 and ERC721 you can used any of them and used this simple example
+This simple nodejs example to explain the working of it
 
 - [Hardhat Upgrades](#hardhat-upgrades)
 - [Getting Started](#getting-started)
@@ -39,16 +40,12 @@ OrcaleUrlProvider = 0xAb570B4B76f86b8678C33bCCc26f3cE6D51f3479
   - You'll know you've installed yarn right if you can run:
     - `yarn --version` and get an output like: `x.x.x`
     - You might need to install it with npm
-- [Docker](https://docs.docker.com/get-docker/) if want to do Fazz testing `echidna`
-  - You'll know you've installed docker right if you can run:
-    - `docker --version` and get an output version.
-  - or you can install with `Pythone` if you want
 
 ## Quickstart
 
 ```
-git clone https://github.com/touqeerShah/DAO-EXAMPLE.git
-cd DAO-EXAMPLE
+git clone https://github.com/touqeerShah/Merkle-tree-example.git
+cd Merkle-tree-example
 yarn
 ```
 
@@ -56,40 +53,7 @@ yarn
 
 Start Node:
 ```
-hh node
-```
-
-Open new terminal Deploy and run following command:
-`following command will run the script which is used to create proposal for value change`
-
-```
-hh run scripts/prpose.ts --network localhost
-
-```
-
-It time to vote:
-`following command will submit vote accrpt the proposal`
-
-```
-hh run scripts/vote.ts --network localhost
-
-```
-
-Once vote is executed it is time to put propoal in Queue:
-`following command will submit Queue to wait to process time will finished `
-
-```
-hh run scripts/queue.ts --network localhost
-
-```
-
-
-Once propoal in Queue:
-`following command  will impletment the changes and call the function to updated the values`
-
-```
-hh run scripts/queue.ts --network localhost
-
+hh deploy --network <network name> --tags merkle
 ```
 
 
@@ -175,35 +139,7 @@ or, to fix:
 yarn lint:fix
 ```
 
-Contract Address Testnet
-```
-on-chain goerli
-{
-    "TimeLock": "0xa513E6E4b8f2a923D98304ec87F64353C4D5C853",
-    "GovernorContract": "0x2279B7A0a67DB372996a5FaB50D91eAA73d2eBe6",
-    "OrcaleUrlProvider": "0x5a49381bC5F3Ab204343b20e5A817A7D08b74F04",
-    "FigurePrintOracle": "0xCbc746816c772a7C12e9556e8fe301DcB060Fc94",
-    "UserIdentityNFT": "0x90550f13E8e7b7456eD88a175e09bE6585b88b94",
-    "DocumentSignature": "0xAafFd42C07fE86B0c9fE064605659014AC4c1Af2",
-    "LinkToken": "0x326C977E6efc84E512bB9C30f76E30c160eD06FB",
-    "MockOracle": "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9"
-}
 
-sepolia
-
-{
-    "TimeLock": "0xa513E6E4b8f2a923D98304ec87F64353C4D5C853",
-    "GovernorContract": "0x2279B7A0a67DB372996a5FaB50D91eAA73d2eBe6",
-    "OrcaleUrlProvider": "0x355097f3d6875036924af3a740c004289669d18d",
-    "FigurePrintOracle": "0xf9431413885d5e1f15c853c1d567996130a20074",
-    "UserIdentityNFT": "0xfc791405495d910a37b718333966675f7a028fe7",
-    "DocumentSignature": "0x40963D2F509c7dc8342F1d3DE789E1D3168818Fc",
-    "LinkToken": "0x779877A7B0D9E8603169DdbD7836e478b4624789",
-    "MockOracle": "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9",
-    "PTNFT": "0x90aBdd9f7519eB46B3aCaf8FFB40d2364e67d4b2"
-    
-}
-```
 
 # Thank you!
 
